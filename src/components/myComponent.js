@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const myComponent = (props)=> {
+const MyComponent = (props)=> {
+  const [someVar, setSomeVar] = useState(100);
 
 const getSum = (x,y) => x + y;
 
@@ -15,10 +16,11 @@ const getMul = (x,y) => x * y;
      Heregtei zuiliin jagsaalt nemeh {props.render({
        getSum: getSum,
        getSub: getSub,
-       getMul: getMul
+       getMul: getMul,
+       someVar: someVar
      })}
    </div>
   )
 }
 
-export default myComponent;
+export default MyComponent;

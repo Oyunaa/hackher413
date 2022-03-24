@@ -8,10 +8,11 @@ export default function myCustom() {
     <div>
       myCustom
       <MyComponent
-        render={({ getMul, getSub, getSum }) => {
+        render={({ getMul, getSub, getSum, someVar }) => {
           return (
             <div>
               Urjih ${getMul(2, 6)} + Hasah ${getSub(2, 6)} + Nemeh ${getSum(2, 6)}
+              <b> {someVar}</b>
             </div>
           );
         }}
